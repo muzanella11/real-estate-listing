@@ -1,0 +1,190 @@
+/******************************************
+  Some tips for creating responsive blocks / modules :
+  - Just copy paste this structure of styling code into your new responsive layouts or modules styling file
+  - Dont forget to register your responsive into `state/_responsive.scss`
+******************************************/
+
+/******************************************
+  Phone Screen
+******************************************/
+@media screen and (min-width: $screen-phone) {
+  /******************************************
+    Create an awesome styling here
+  ******************************************/
+}
+
+@media screen and (min-width: 620px) {
+  /******************************************
+    Create an awesome styling here
+  ******************************************/
+}
+
+/******************************************
+  Tablet Screen
+******************************************/
+@media screen and (min-width: $screen-tablet) {
+  /******************************************
+    Create an awesome styling here
+  ******************************************/
+}
+
+/******************************************
+  Medium Screen
+******************************************/
+@media screen and (min-width: $screen-medium) {
+  /******************************************
+    Create an awesome styling here
+  ******************************************/
+}
+
+/******************************************
+  Large Screen
+******************************************/
+@media screen and (min-width: $screen-large) {
+  /******************************************
+    Create an awesome styling here
+  ******************************************/
+}
+
+@media screen and (min-width: 1250px) {
+  /******************************************
+    Create an awesome styling here
+  ******************************************/
+}
+
+@media screen and (max-width: 1250px) {
+  /******************************************
+    Create an awesome styling here
+  ******************************************/
+}
+
+@media screen and (max-width: $screen-md-max) {
+  .#{$namespace} {
+    & .l-homepage {
+      & .homepage {
+        &__hero {
+          &::before {
+            background-size: cover;
+          }
+        }
+      }
+    }
+  }
+}
+
+/******************************************
+  Max Medium Screen
+******************************************/
+@media screen and (max-width: $screen-sm-max) {
+  /******************************************
+    Create an awesome styling here
+  ******************************************/
+}
+
+@media screen and (max-width: 800px) {
+  /******************************************
+    Create an awesome styling here
+  ******************************************/
+}
+
+@media screen and (max-width: 768px) {
+  .#{$namespace} {
+    & .l-homepage {
+      & .homepage {
+        &__hero {
+          & .hero {
+            &__content {
+              & .content {
+                &__left {
+                  width: 100%;
+                  margin-bottom: 64px;
+                  padding: 0;
+                }
+
+                &__right {
+                  width: 100%;
+                  padding: 0;
+
+                  & .right {
+                    &-wrapper {
+                      padding: 0;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/******************************************
+  Max Phone Screen
+******************************************/
+@media screen and (max-width: $screen-xs-max) {
+  .#{$namespace} {
+    & .l-homepage {
+      & .homepage {
+        &__hero {
+          padding-bottom: 80px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 620px) {
+  /******************************************
+    Create an awesome styling here
+  ******************************************/
+}
+
+@media screen and (max-width: 600px) {
+  /******************************************
+    Create an awesome styling here
+  ******************************************/
+}
+
+@media screen and (max-width: 500px) {
+  /******************************************
+    Create an awesome styling here
+  ******************************************/
+}
+
+@media screen and (max-width: 480px) {
+  /******************************************
+    Create an awesome styling here
+  ******************************************/
+}
+
+@media screen and (max-width: 450px) {
+  /******************************************
+    Create an awesome styling here
+  ******************************************/
+}
+
+@media screen and (max-width: 425px) {
+  /******************************************
+    Create an awesome styling here
+  ******************************************/
+}
+
+@media screen and (max-width: 400px) {
+  /******************************************
+    Create an awesome styling here
+  ******************************************/
+}
+
+@media screen and (max-width: 375px) {
+  /******************************************
+    Create an awesome styling here
+  ******************************************/
+}
+
+@media screen and (max-width: 320px) {
+  /******************************************
+    Create an awesome styling here
+  ******************************************/
+}

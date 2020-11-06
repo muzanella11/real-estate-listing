@@ -1,0 +1,131 @@
+/******************************************
+  Some tips for creating blocks / modules :
+  - Add `c` prefix before the name of block or modules
+  - Or Just copy paste this structure of styling code into your new block or components styling file
+  - Dont forget to register your block or modules into `_modules.scss`
+******************************************/
+
+/** This Place For Block Card **/
+.#{$namespace} {
+  & .c-card {
+    background: white;
+    padding: 8px;
+    border-radius: 8px;
+    color: #ACADAF;
+
+    & .card {
+      &__header {
+        & .header {
+          &__background {
+            position: relative;
+            width: 100%;
+            border-top-right-radius: 8px;
+            border-top-left-radius: 8px;
+            height: 180px;
+            background: rgba(0, 0, 0, 0.3);
+          }
+        }
+      }
+
+      &__body {
+        padding-top: 8px;
+
+        & .body {
+          &__rows-action {
+            position: relative;
+
+            & .rows-action {
+              &__list {
+                position: relative;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+
+                @include clearfix;
+
+                & > li {
+                  float: left;
+                  padding-right: 8px;
+
+                  &:last-child {
+                    padding: 0;
+                  }
+                }
+              }
+
+              &__love {
+                position: absolute;
+                right: 0;
+                top: 0;
+                padding: 0 8px;
+              }
+            }
+          }
+
+          &__rows-feature {
+            padding-top: 8px;
+
+            & .rows-feature {
+              &__list {
+                position: relative;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+
+                @include clearfix;
+
+                & > li {
+                  float: left;
+                  padding-right: 8px;
+                  color: #545245;
+                  font-size: 12px;
+                  font-weight: bold;
+
+                  &:last-child {
+                    padding: 0;
+                  }
+                }
+              }
+            }
+          }
+
+          &__rows-detail {
+            padding-top: 8px;
+
+            & .rows-detail {
+              &__budget {
+                & .budget {
+                  &-title {
+                    font-weight: bold;
+                    color: #545245;
+                  }
+
+                  &-subtitle {
+                    color: #ACADAF;
+                    font-weight: normal;
+                  }
+                }
+              }
+            }
+          }
+
+          &__rows-see-detail {
+            padding-top: 24px;
+
+            & .rows-see-detail {
+              &__action {
+                & .action {
+                  &__detail {
+                    //
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ************************************ */
